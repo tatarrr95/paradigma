@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Forma-1-_____ {
+    width: 13px;
+    height: 13px;
+    background-position: -5px -5px;
+}
+
+.sprite-contacts-geo {
+    width: 26px;
+    height: 26px;
+    background-position: -28px -5px;
+}
+
+.sprite-contacts-mail {
+    width: 26px;
+    height: 26px;
+    background-position: -64px -5px;
+}
+
+.sprite-contacts-telepnone {
+    width: 26px;
+    height: 26px;
+    background-position: -100px -5px;
+}
+
+.sprite-header-mail-icon {
+    width: 27px;
+    height: 27px;
+    background-position: -136px -5px;
+}
+
+.sprite-header-telepnone-icon {
+    width: 27px;
+    height: 27px;
+    background-position: -173px -5px;
+}
+
+.sprite-slider-nav {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -42px;
+}
+
+.sprite-slider-nav-active {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -42px;
+}
+
+.sprite-title-line {
+    width: 196px;
+    height: 4px;
+    background-position: -5px -77px;
+}

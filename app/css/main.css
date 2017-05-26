@@ -1,0 +1,130 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+body p, body span {
+  font-family: MyriadProRegular;
+  color: #000; }
+
+.myContainer {
+  max-width: 1200px;
+  margin: auto; }
+
+.header {
+  min-height: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .header .header-logo img {
+    margin-right: 18px; }
+  .header .header-contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .header .header-contacts-list .header-contacts-list-item {
+      margin-right: 30px;
+      padding-top: 7px;
+      float: left; }
+      .header .header-contacts-list .header-contacts-list-item i, .header .header-contacts-list .header-contacts-list-item span {
+        float: left; }
+      .header .header-contacts-list .header-contacts-list-item i {
+        margin-right: 15px; }
+      .header .header-contacts-list .header-contacts-list-item span {
+        margin-top: 3px;
+        font-size: 15px; }
+    .header .header-contacts-list .header-contacts-list-item:last-child {
+      margin-right: 0px; }
+
+.shapka {
+  min-height: 656px;
+  background: url("../img/shapka.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .shapka .myContainer {
+    text-align: center;
+    padding-top: 90px; }
+    .shapka .myContainer .shapka-title {
+      font-size: 58px;
+      font-family: MyriadProSemiBold;
+      margin-bottom: 25px;
+      color: #fff;
+      display: block; }
+    .shapka .myContainer .shapka-description {
+      font-size: 32px;
+      color: #fff;
+      display: block;
+      margin-bottom: 35px; }
+    .shapka .myContainer .shapka-form {
+      position: relative;
+      width: 886px;
+      background: url("../img/shapka-form.png") no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover;
+      margin: auto;
+      text-align: auto;
+      padding-top: 45px;
+      min-height: 202px; }
+      .shapka .myContainer .shapka-form .shapka-form-top-left {
+        position: absolute;
+        top: -10px;
+        left: -10px; }
+      .shapka .myContainer .shapka-form .shapka-form-top-right {
+        position: absolute;
+        top: -10px;
+        right: -10px; }
+      .shapka .myContainer .shapka-form .shapka-form-bot-left {
+        position: absolute;
+        bottom: -10px;
+        left: -10px; }
+      .shapka .myContainer .shapka-form .shapka-form-bot-right {
+        position: absolute;
+        bottom: -10px;
+        right: -10px; }
+      .shapka .myContainer .shapka-form .shapka-form-title {
+        font-size: 26px;
+        color: #fff;
+        margin-bottom: 25px;
+        display: block; }
+      .shapka .myContainer .shapka-form input {
+        width: 452px;
+        height: 64px;
+        border: 3px solid #fff;
+        background: none;
+        color: #fff;
+        font-size: 19px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 28px; }
+      .shapka .myContainer .shapka-form input::-webkit-input-placeholder {
+        color: #fff; }
+      .shapka .myContainer .shapka-form input::-moz-placeholder {
+        color: #fff; }
+      .shapka .myContainer .shapka-form input:-ms-input-placeholder {
+        color: #fff; }
+      .shapka .myContainer .shapka-form input::placeholder {
+        color: #fff; }
+      .shapka .myContainer .shapka-form button {
+        height: 64px;
+        width: 313px;
+        background-color: #1875b0;
+        color: #fff;
+        font-size: 19px;
+        font-family: MyriadProBold;
+        border: 0px; }
+
+section {
+  padding-top: 90px; }
+
+.section-title {
+  display: block;
+  font-size: 42px;
+  font-family: MyriadProSemiBold;
+  color: #353535; }
+
+.content-center {
+  text-align: center; }

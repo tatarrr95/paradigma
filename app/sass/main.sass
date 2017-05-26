@@ -1,0 +1,136 @@
+$greyDark: #353535
+$grey: #474747
+%text
+	font-family: MyriadProRegular
+	font-size: 20px
+	color: #fff
+
+.clearfix:before, .clearfix:after
+	content: "";
+	display: table
+.clearfix:after
+	clear: both
+.clearfix
+	zoom: 1
+
+
+body
+	p, span
+		font-family: MyriadProRegular
+		color: #000
+
+.myContainer
+	max-width: 1200px
+	margin: auto	
+
+.header
+	min-height: 85px
+	padding-top: 20px
+	padding-bottom: 20px
+	.header-logo
+		img
+			margin-right: 18px
+	.header-contacts-list
+		list-style: none
+		margin: 0
+		padding: 0
+		.header-contacts-list-item
+			margin-right: 30px
+			padding-top: 7px
+			float: left
+			i, span
+				float: left
+			i
+				margin-right: 15px
+			span
+				margin-top: 3px
+				font-size: 15px
+		.header-contacts-list-item:last-child
+			margin-right: 0px
+
+.shapka
+	min-height: 656px
+	background: url("../img/shapka.jpg") no-repeat
+	background-size: cover
+	.myContainer
+		text-align: center
+		padding-top: 90px
+		.shapka-title
+			font-size: 58px
+			font-family: MyriadProSemiBold
+			margin-bottom: 25px
+			color: #fff
+			display: block
+		.shapka-description
+			font-size: 32px
+			color: #fff
+			display: block
+			margin-bottom: 35px
+		.shapka-form
+			position: relative
+			width: 886px
+			background: url("../img/shapka-form.png") no-repeat
+			background-size: cover
+			margin: auto
+			text-align: auto
+			padding-top: 45px
+			min-height: 202px
+			.shapka-form-top-left
+				position: absolute
+				top: -10px
+				left: -10px
+			.shapka-form-top-right
+				position: absolute
+				top: -10px
+				right: -10px
+			.shapka-form-bot-left
+				position: absolute
+				bottom: -10px
+				left: -10px
+			.shapka-form-bot-right
+				position: absolute
+				bottom: -10px
+				right: -10px
+			.shapka-form-title
+				font-size: 26px
+				color: #fff
+				margin-bottom: 25px
+				display: block
+			input
+				width: 452px
+				height: 64px
+				border: 3px solid #fff
+				background: none
+				color: #fff
+				font-size: 19px
+				padding-left: 20px
+				padding-right: 20px
+				margin-right: 28px
+			input::placeholder
+				color: #fff
+			button
+				height: 64px
+				width: 313px
+				background-color: #1875b0
+				color: #fff
+				font-size: 19px
+				font-family: MyriadProBold
+				border: 0px
+
+section
+	padding-top: 90px
+.section-title
+	display: block
+	font-size: 42px
+	font-family: MyriadProSemiBold
+	color: $greyDark
+.section-title:after
+	content: " "
+	background-image: url(../img/sprite.png)
+    background-repeat: no-repeat
+    display: block
+    width: 196px
+    height: 4px
+    background-position: -5px -77px
+.content-center
+	text-align: center
