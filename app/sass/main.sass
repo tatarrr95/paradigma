@@ -5,17 +5,17 @@ $grey: #474747
 	font-size: 20px
 	color: #fff
 
-.clearfix:before, .clearfix:after
-	content: "";
-	display: table
-.clearfix:after
-	clear: both
-.clearfix
-	zoom: 1
+// .clearfix:before, .clearfix:after
+// 	content: "";
+// 	display: table
+// .clearfix:after
+// 	clear: both
+// .clearfix
+// 	zoom: 1
 
 
 body
-	p, span
+	p, span, li, button
 		font-family: MyriadProRegular
 		color: #000
 
@@ -68,7 +68,7 @@ body
 			margin-bottom: 35px
 		.shapka-form
 			position: relative
-			width: 886px
+			max-width: 886px
 			background: url("../img/shapka-form.png") no-repeat
 			background-size: cover
 			margin: auto
@@ -124,13 +124,212 @@ section
 	font-size: 42px
 	font-family: MyriadProSemiBold
 	color: $greyDark
+	text-align: center
 .section-title:after
+	height: 4px
+	width: 196px
+	margin: auto
+	margin-top: 20px
 	content: " "
-	background-image: url(../img/sprite.png)
-    background-repeat: no-repeat
-    display: block
-    width: 196px
-    height: 4px
-    background-position: -5px -77px
+	display: block
+	background-image: url("../img/sprite/title-line.png")
 .content-center
 	text-align: center
+
+.advantages
+	background-color: #fafafa
+	.advantages-list
+		padding: 100px 0px 100px 0px
+		text-align: center
+		list-style: none
+		.advantages-list-item
+			float: left
+			margin-bottom: 70px
+			img
+				display: inline-block
+				margin-bottom: 20px
+			span
+				display: block
+				font-size: 16px
+				color: $grey
+
+.doverie
+	min-height: 740px
+	.doverie-list
+		list-style: none
+		padding: 60px 0px 60px 0px
+		.doverie-list-item
+			float: left
+			width: 20%
+			height: 150px
+			display: flex
+		    align-items: center
+		    justify-content: center
+		    overflow: auto
+		    margin-bottom: 15px
+			img
+				margin: auto
+
+.services
+	background-color: #fafafa
+	.services-body
+		min-height: 590px
+		margin-top: 65px
+		.services-body-select
+			background: url("../img/bg-services-body.png") no-repeat
+			background-size: cover
+		.services-body-element
+			min-height: 610px
+			background: url("../img/bg-services-body-element.png") no-repeat
+			background-size: cover
+			display: flex
+		    align-items: center
+		    justify-content: center
+		    overflow: auto
+			.services-body-element-body
+				margin: auto 0
+				max-width: 680px
+				padding-left: 50px
+				.services-body-element-title
+					color: #fff
+					font-size: 32px
+					font-family: MyriadProBold
+					display: block
+					margin-bottom: 35px
+				.services-body-element-desctiption
+					color: #fff
+					font-size: 20px
+					display: block
+					margin-bottom: 35px
+				button
+					width: 270px
+					background-color: #65a343
+					border: none
+					color: #fff
+					height: 55px
+					font-size: 18px
+					font-family: MyriadProBold
+		.services-body-select-list
+			list-style: none
+			max-width: 480px
+			float: right
+			padding: 50px 0px 50px 0px
+			margin: 0
+			.services-body-select-list-item
+				color: #fff
+				font-size: 15px
+				border: 3px solid #fff
+				display: inline-block
+				padding: 7px
+				margin-bottom: 10px
+				margin-right: 10px
+
+.team
+	background: url("../img/bg-team.png") no-repeat
+	background-position: right
+	.team-list
+		list-style: none
+		padding: 100px 0px 100px 0px
+		.team-list-item
+			margin-bottom: 50px
+		.team-list-item-body
+			display: inline-block
+			.team-list-item-body-title
+				color: $greyDark
+				font-size: 34px
+				font-family: MyriadProBold
+				display: block
+				margin-bottom: 10px
+			.team-list-item-body-description
+				font-size: 18px
+				display: block
+				color: #606060
+
+.testimonials
+	background-color: #fafafa
+	.testimonials-body
+		padding: 75px 0px 75px 0px
+		.testimonials-slider
+			margin-bottom: 60px
+			.testimonials-item-body
+				max-width: 640px
+				display: inline-block
+				text-align: left
+				vertical-align: middle
+			img
+				max-width: 255px
+				display: inline-block
+				margin-right: 37px
+			.title
+				display: block
+				font-size: 36px
+				font-family: MyriadProBold
+				color: $greyDark
+				margin-bottom: 20px
+			.status
+				display: block
+				font-size: 26px
+				color: #65a343
+				margin-bottom: 15px
+			.description
+				display: block
+				font-size: 18px
+				color: #606060
+			.owl-nav
+			    position: absolute
+			    top: 45%
+			    width: 100%
+			    .owl-prev
+			      display: block
+			      content: " "
+			      float: left
+			      background: url("../img/arrow-left-green.png") no-repeat
+			      width: 26px
+			      height: 49px
+			      text-indent: -9999px
+			      margin-left: 20px
+			    .owl-next
+			      display: block
+			      float: right
+			      background: url("../img/arrow-right-green.png") no-repeat
+			      width: 26px
+			      height: 49px
+			      text-indent: -9999px
+			      margin-right: 20px
+
+.complete-objects
+	.complete-objects-body
+		padding: 100px 0px 100px 0px
+		.complete-objects-slider
+			img
+				width: 233px
+
+
+.bigSlider
+	.section-title
+		color: #fff
+		padding-top: 80px
+	.bigSlider-slider
+		margin-top: -164px
+		.owl-nav
+		    position: absolute
+		    top: 45%
+		    width: 100%
+		    .owl-prev
+		    	z-index: 9999
+			    display: block
+			    content: " "
+			    float: left
+			    background: url("../img/arrow-left-green.png") no-repeat
+			    width: 26px
+			    height: 49px
+			    text-indent: -9999px
+			    margin-left: 20px
+		    .owl-next
+		        display: block
+		        float: right
+		        background: url("../img/arrow-right-green.png") no-repeat
+		        width: 26px
+		        height: 49px
+		        text-indent: -9999px
+		        margin-right: 20px
