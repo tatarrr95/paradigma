@@ -5,6 +5,9 @@ $grey: #474747
 	font-size: 20px
 	color: #fff
 
+// @media all and (max-width: 580px)
+// @media all and (max-width: 800px)
+
 // .clearfix:before, .clearfix:after
 // 	content: "";
 // 	display: table
@@ -15,7 +18,7 @@ $grey: #474747
 
 
 body
-	p, span, li, button
+	p, span, li, button, a
 		font-family: MyriadProRegular
 		color: #000
 
@@ -38,18 +41,48 @@ body
 			margin-right: 30px
 			padding-top: 7px
 			float: left
-			i, span
+			i, span, a
 				float: left
 			i
 				margin-right: 15px
-			span
+			span, a
 				margin-top: 3px
 				font-size: 15px
 		.header-contacts-list-item:last-child
-			margin-right: 0px
+			margin-right: 0px			
+
+
+@media all and (max-width: 800px)
+	.shapka
+		.shapka-title
+			font-size: 46px !important
+		.shapka-description
+			font-size: 32px !important
+
+@media all and (max-width: 450px)
+	.shapka
+		.shapka-title
+			font-size: 34px !important
+		.shapka-description
+			font-size: 28px !important
+
+@media all and (max-width: 510px)
+	.shapka
+		.shapka-form
+			padding-bottom: 30px
+			input
+				width: 80% !important
+				margin-bottom: 20px
+				margin-right: 0px !important
+				font-size: 16px !important
+			button
+				width: 80% !important
+			input::placeholder
+				font-size: 11px !important
 
 .shapka
-	min-height: 656px
+	min-height: 556px
+	padding-bottom: 100px
 	background: url("../img/shapka.jpg") no-repeat
 	background-size: cover
 	.myContainer
@@ -68,7 +101,7 @@ body
 			margin-bottom: 35px
 		.shapka-form
 			position: relative
-			max-width: 886px
+			max-width: 90%
 			background: url("../img/shapka-form.png") no-repeat
 			background-size: cover
 			margin: auto
@@ -153,22 +186,42 @@ section
 				font-size: 16px
 				color: $grey
 
+@media all and (max-width: 450px)
+	.advantages
+		.advantages-list-item
+			width: 100%
+
 .doverie
 	min-height: 740px
 	.doverie-list
 		list-style: none
 		padding: 60px 0px 60px 0px
+		.bot-top
+			border-top: 2px solid #eaeaea
+			border-bottom: 2px solid #eaeaea
+		.left-right
+			border-left: 2px solid #eaeaea
+			border-right: 2px solid #eaeaea
+		.doverie-list-item-wrapper
+			height: 100%
+			width: 100%
+			overflow: auto
+			justify-content: center
+			align-items: center
+			display: flex			
+			img
+				margin: auto
 		.doverie-list-item
+			margin-bottom: 20px
+			padding: 0px 15px
 			float: left
 			width: 20%
 			height: 150px
-			display: flex
-		    align-items: center
-		    justify-content: center
-		    overflow: auto
-		    margin-bottom: 15px
-			img
-				margin: auto
+
+@media all and (max-width: 450px)
+	.doverie
+		.doverie-list-item
+			width: 50% !important
 
 .services
 	background-color: #fafafa
@@ -224,6 +277,14 @@ section
 				margin-bottom: 10px
 				margin-right: 10px
 
+@media all and (max-width: 450px)
+	.services
+		.services-body-element
+			.services-body-element-body
+				padding-left: 10px !important
+				button
+					width: 240px !important
+
 .team
 	background: url("../img/bg-team.png") no-repeat
 	background-position: right
@@ -250,6 +311,8 @@ section
 	.testimonials-body
 		padding: 75px 0px 75px 0px
 		.testimonials-slider
+			margin: auto
+			width: 80%
 			margin-bottom: 60px
 			.testimonials-item-body
 				max-width: 640px
@@ -287,7 +350,7 @@ section
 			      width: 26px
 			      height: 49px
 			      text-indent: -9999px
-			      margin-left: 20px
+			      margin-left: -7%
 			    .owl-next
 			      display: block
 			      float: right
@@ -295,22 +358,70 @@ section
 			      width: 26px
 			      height: 49px
 			      text-indent: -9999px
-			      margin-right: 20px
+			      margin-right: -7%
 
 .complete-objects
 	.complete-objects-body
 		padding: 100px 0px 100px 0px
 		.complete-objects-slider
-			img
-				width: 233px
+			width: 80%
+			margin: auto
+			.complete-objects-sub-item
+				margin-bottom: 15px
+				.complete-objects-sub-item-description
+					height: 80px
+					background-color: #65a343
+					color: #fff
+					line-height: 18px
+					display: flex
+				    align-items: center
+				    justify-content: center
+				    overflow: auto
+					span
+						color: #fff
+						font-size: 14px
+						line-height: 18px
+						display: block
+						margin: auto
+						padding: 0px 7px
+				// width: 233px
+			.owl-stage-outer
+				// width: 80%
+				// padding-left: 100px
+				// spadding-right: 100px
+			.owl-nav
+			    position: absolute
+			    top: 45%
+			    width: 100%
+			    .owl-prev
+			    	z-index: 9999
+				    display: block
+				    content: " "
+				    float: left
+				    background: url("../img/arrow-left-grey.png") no-repeat
+				    width: 34px
+				    height: 62px
+				    text-indent: -9999px
+				    margin-left: -7%
+			    .owl-next
+			        display: block
+			        float: right
+			        background: url("../img/arrow-right-gray.png") no-repeat
+			        width: 34px
+			        height: 62px
+			        text-indent: -9999px
+			        margin-right: -7%
 
 
 .bigSlider
+	position: relative
 	.section-title
+		position: absolute
 		color: #fff
 		padding-top: 80px
+		z-index: 2
+		width: 100%
 	.bigSlider-slider
-		margin-top: -164px
 		.owl-nav
 		    position: absolute
 		    top: 45%
@@ -333,3 +444,68 @@ section
 		        height: 49px
 		        text-indent: -9999px
 		        margin-right: 20px
+
+
+.map
+	padding: 0
+	position: relative
+	.YMapsID
+	.map-contacts
+		z-index: 2
+		padding: 40px 70px 40px 70px
+		top: 100px
+		left: 200px
+		position: absolute
+		// min-width: 550px
+		// min-height: 370px
+		background-color: #206a9d
+		.map-contacts-title
+			font-size: 40px
+			color: #fff
+		.map-contacts-list
+			list-style: none
+			padding: 0
+			.map-contacts-item
+				display: block
+				margin-bottom: 15px
+				i
+					margin-top: 4px
+					float: left
+					margin-right: 12px
+				a, span
+					font-size: 24px
+					color: #fff
+					float: left
+
+@media all and (max-width: 800px)
+	.map-contacts
+		position: relative !important
+		top: 0px !important
+		left: 0px !important
+
+
+.footer
+	padding: 30px 0px 30px 0px
+	a, span, p
+		font-size: 16px
+		color: $greyDark
+		vertical-align: middle
+	p
+		margin: 0
+	.myContainer
+		// display: flex
+	    // align-items: center
+	    // justify-content: center
+	    // overflow: auto
+	.footer-left
+		text-align: left
+	.footer-center
+		text-align: center
+	.footer-right
+		text-align: right
+		a
+			color: #65a343
+	.footer-left, .footer-center, .footer-right
+		margin: auto 0px
+	.footer-center, .footer-right
+		padding-top: 10px
