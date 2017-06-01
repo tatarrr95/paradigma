@@ -180,7 +180,8 @@ section {
 
 @media all and (max-width: 450px) {
   .advantages .advantages-list-item {
-    width: 100%; } }
+    width: 100%;
+    padding: 0px !important; } }
 
 .doverie {
   min-height: 740px; }
@@ -230,7 +231,8 @@ section {
     .services .services-body .services-body-select {
       background: url("../img/bg-services-body.png") no-repeat;
       -webkit-background-size: cover;
-              background-size: cover; }
+              background-size: cover;
+      height: auto; }
     .services .services-body .services-body-element {
       min-height: 610px;
       background: url("../img/bg-services-body-element.png") no-repeat;
@@ -280,6 +282,14 @@ section {
         padding: 7px;
         margin-bottom: 10px;
         margin-right: 10px; }
+      .services .services-body .services-body-select-list .services-body-select-list-item:hover {
+        cursor: pointer; }
+      .services .services-body .services-body-select-list .activeService {
+        background-color: #65a343;
+        border: 3px solid #65a343; }
+
+.noDisplay {
+  display: none; }
 
 @media all and (max-width: 450px) {
   .services .services-body-element .services-body-element-body {
@@ -496,3 +506,53 @@ section {
     margin: auto 0px; }
   .footer .footer-center, .footer .footer-right {
     padding-top: 10px; }
+
+.modal-send .modal-send-title {
+  display: block;
+  margin-bottom: 25px;
+  color: #65a343;
+  font-size: 30px; }
+
+.modal-send input {
+  width: 452px;
+  height: 44px;
+  border: 3px solid #65a343;
+  background-color: #fafafa;
+  color: #000;
+  font-size: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px; }
+
+.modal-send input::-webkit-input-placeholder {
+  color: #474747; }
+
+.modal-send input::-moz-placeholder {
+  color: #474747; }
+
+.modal-send input:-ms-input-placeholder {
+  color: #474747; }
+
+.modal-send input::placeholder {
+  color: #474747; }
+
+.modal-send button {
+  height: 64px;
+  width: 313px;
+  background-color: #65a343;
+  color: #fff;
+  font-size: 19px;
+  font-family: MyriadProBold;
+  border: 0px; }
+
+.modal-success .modal-success-title {
+  display: block;
+  color: #65a343;
+  font-size: 30px; }
+
+.modal-success img {
+  width: 200px; }
+
+.modal-img {
+  padding: 0;
+  width: auto; }

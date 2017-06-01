@@ -190,6 +190,7 @@ section
 	.advantages
 		.advantages-list-item
 			width: 100%
+			padding: 0px !important
 
 .doverie
 	min-height: 740px
@@ -231,6 +232,7 @@ section
 		.services-body-select
 			background: url("../img/bg-services-body.png") no-repeat
 			background-size: cover
+			height: auto
 		.services-body-element
 			min-height: 610px
 			background: url("../img/bg-services-body-element.png") no-repeat
@@ -276,6 +278,14 @@ section
 				padding: 7px
 				margin-bottom: 10px
 				margin-right: 10px
+			.services-body-select-list-item:hover
+				cursor: pointer
+			.activeService
+				background-color: #65a343
+				border: 3px solid #65a343
+
+.noDisplay
+	display: none
 
 @media all and (max-width: 450px)
 	.services
@@ -359,6 +369,8 @@ section
 			      height: 49px
 			      text-indent: -9999px
 			      margin-right: -7%
+
+
 
 .complete-objects
 	.complete-objects-body
@@ -509,3 +521,42 @@ section
 		margin: auto 0px
 	.footer-center, .footer-right
 		padding-top: 10px
+
+.modal-send
+	.modal-send-title
+		display: block
+		margin-bottom: 25px
+		color: #65a343
+		font-size: 30px
+	input
+		width: 452px
+		height: 44px
+		border: 3px solid #65a343
+		background-color: #fafafa
+		color: #000
+		font-size: 19px
+		padding-left: 20px
+		padding-right: 20px
+		margin-bottom: 30px
+	input::placeholder
+		color: $grey
+	button
+		height: 64px
+		width: 313px
+		background-color: #65a343
+		color: #fff
+		font-size: 19px
+		font-family: MyriadProBold
+		border: 0px
+
+.modal-success
+	.modal-success-title
+		display: block
+		color: #65a343
+		font-size: 30px
+	img
+		width: 200px
+
+.modal-img
+	padding: 0
+	width: auto
