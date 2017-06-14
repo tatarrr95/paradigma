@@ -5,558 +5,787 @@ $grey: #474747
 	font-size: 20px
 	color: #fff
 
-// @media all and (max-width: 580px)
-// @media all and (max-width: 800px)
+@charset "UTF-8"
 
-// .clearfix:before, .clearfix:after
-// 	content: "";
-// 	display: table
-// .clearfix:after
-// 	clear: both
-// .clearfix
-// 	zoom: 1
-
+.complete-objects .complete-objects-body .complete-objects-slider .complete-objects-sub-item img:hover
+  cursor: pointer
 
 body
-	p, span, li, button, a
-		font-family: MyriadProRegular
-		color: #000
+  a
+    cursor: pointer
+    font-family: MyriadProRegular
+    color: #000
+  button, li, p, span
+    font-family: MyriadProRegular
+    color: #000
+
+@font-face
+  font-family: MyriadProRegular
+  src: url(../fonts/MyriadProRegular/MyriadProRegular.eot)
+  src: url(../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProRegular/MyriadProRegular.woff) format("woff"), url(../fonts/MyriadProRegular/MyriadProRegular.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
+
+@font-face
+  font-family: MyriadProBold
+  src: url(../fonts/MyriadProBold/MyriadProBold.eot)
+  src: url(../fonts/MyriadProBold/MyriadProBold.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProBold/MyriadProBold.woff) format("woff"), url(../fonts/MyriadProBold/MyriadProBold.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
+
+@font-face
+  font-family: MyriadProItalic
+  src: url(../fonts/MyriadProItalic/MyriadProItalic.eot)
+  src: url(../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProItalic/MyriadProItalic.woff) format("woff"), url(../fonts/MyriadProItalic/MyriadProItalic.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
+
+@font-face
+  font-family: MyriadProSemiBold
+  src: url(../fonts/MyriadProSemiBold/MyriadProSemiBold.eot)
+  src: url(../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProSemiBold/MyriadProSemiBold.woff) format("woff"), url(../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
+
+@font-face
+  font-family: MyriadProBoldItalic
+  src: url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot)
+  src: url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff) format("woff"), url(../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
+
+@font-face
+  font-family: MyriadProSemiBoldItalic
+  src: url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot)
+  src: url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff) format("woff"), url(../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf) format("truetype")
+  font-style: normal
+  font-weight: 400
+
 
 .myContainer
-	max-width: 1200px
-	margin: auto	
+  max-width: 1200px
+  margin: auto
 
 .header
-	min-height: 85px
-	padding-top: 20px
-	padding-bottom: 20px
-	.header-logo
-		img
-			margin-right: 18px
-	.header-contacts-list
-		list-style: none
-		margin: 0
-		padding: 0
-		.header-contacts-list-item
-			margin-right: 30px
-			padding-top: 7px
-			float: left
-			i, span, a
-				float: left
-			i
-				margin-right: 15px
-			span, a
-				margin-top: 3px
-				font-size: 15px
-		.header-contacts-list-item:last-child
-			margin-right: 0px			
+  min-height: 85px
+  padding-top: 20px
+  padding-bottom: 20px
 
+.header-logo
+  padding-right: 0px
+
+.header-contacts
+  padding-left: 0px
+
+.header
+  .header-logo img
+    margin-right: 18px
+  .header-contacts-list
+    list-style: none
+    margin: 0
+    padding: 0
+    .header-contacts-list-item
+      margin-right: 30px
+      padding-top: 7px
+      float: right
+      a, i, span
+        float: left
+      i
+        margin-right: 15px
+      a, span
+        margin-top: 3px
+        font-size: 15px
+      &:first-child
+        margin-right: 0
 
 @media all and (max-width: 800px)
-	.shapka
-		.shapka-title
-			font-size: 46px !important
-		.shapka-description
-			font-size: 32px !important
+  .header-contacts
+    padding-left: 10px
+  .header .header-contacts-list .header-contacts-list-item
+    float: left
+    &:first-child
+      margin-right: 15px
+    &:last-child
+      margin-right: 0px
+
+@media all and (max-width: 800px)
+  .shapka
+    .shapka-title
+      font-size: 46px !important
+    .shapka-description
+      font-size: 32px !important
 
 @media all and (max-width: 450px)
-	.shapka
-		.shapka-title
-			font-size: 34px !important
-		.shapka-description
-			font-size: 28px !important
+  .header
+    .header-contacts-list-item, .header-logo
+      margin-bottom: 10px
+  .shapka
+    .shapka-title
+      font-size: 34px !important
+    .shapka-description
+      font-size: 28px !important
 
 @media all and (max-width: 510px)
-	.shapka
-		.shapka-form
-			padding-bottom: 30px
-			input
-				width: 80% !important
-				margin-bottom: 20px
-				margin-right: 0px !important
-				font-size: 16px !important
-			button
-				width: 80% !important
-			input::placeholder
-				font-size: 11px !important
+  .shapka .shapka-form
+    padding-bottom: 30px
+    input
+      width: 80% !important
+      margin-bottom: 20px
+      margin-right: 0 !important
+      font-size: 16px !important
+    button
+      width: 80% !important
+    input
+      &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::placeholder
+        font-size: 16px !important
+      &:before
+        content: "Введите Ваш контактный телефон или E-mail"
+        color: #000
+        display: block
 
 .shapka
-	min-height: 556px
-	padding-bottom: 100px
-	background: url("../img/shapka.jpg") no-repeat
-	background-size: cover
-	.myContainer
-		text-align: center
-		padding-top: 90px
-		.shapka-title
-			font-size: 58px
-			font-family: MyriadProSemiBold
-			margin-bottom: 25px
-			color: #fff
-			display: block
-		.shapka-description
-			font-size: 32px
-			color: #fff
-			display: block
-			margin-bottom: 35px
-		.shapka-form
-			position: relative
-			max-width: 90%
-			background: url("../img/shapka-form.png") no-repeat
-			background-size: cover
-			margin: auto
-			text-align: auto
-			padding-top: 45px
-			min-height: 202px
-			.shapka-form-top-left
-				position: absolute
-				top: -10px
-				left: -10px
-			.shapka-form-top-right
-				position: absolute
-				top: -10px
-				right: -10px
-			.shapka-form-bot-left
-				position: absolute
-				bottom: -10px
-				left: -10px
-			.shapka-form-bot-right
-				position: absolute
-				bottom: -10px
-				right: -10px
-			.shapka-form-title
-				font-size: 26px
-				color: #fff
-				margin-bottom: 25px
-				display: block
-			input
-				width: 452px
-				height: 64px
-				border: 3px solid #fff
-				background: none
-				color: #fff
-				font-size: 19px
-				padding-left: 20px
-				padding-right: 20px
-				margin-right: 28px
-			input::placeholder
-				color: #fff
-			button
-				height: 64px
-				width: 313px
-				background-color: #1875b0
-				color: #fff
-				font-size: 19px
-				font-family: MyriadProBold
-				border: 0px
+  min-height: 556px
+  padding-bottom: 100px
+  background: url(../img/shapka.jpg) no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  .myContainer
+    text-align: center
+    padding-top: 90px
+    .shapka-title
+      font-size: 58px
+      font-family: MyriadProSemiBold
+      margin-bottom: 25px
+      color: #fff
+      display: block
+    .shapka-description
+      font-size: 32px
+      color: #fff
+      display: block
+      margin-bottom: 35px
+    .shapka-form
+      position: relative
+      max-width: 90%
+      background: url(../img/shapka-form.jpg) no-repeat
+      -webkit-background-size: cover
+      background-size: cover
+      margin: auto
+      text-align: auto
+      padding-top: 45px
+      min-height: 202px
+
+.content-center, .section-title
+  text-align: center
+
+.shapka .myContainer .shapka-form
+  .shapka-form-top-left
+    position: absolute
+    top: -10px
+    left: -10px
+  .shapka-form-top-right
+    position: absolute
+    top: -10px
+    right: -10px
+  .shapka-form-bot-left
+    position: absolute
+    bottom: -10px
+    left: -10px
+  .shapka-form-bot-right
+    position: absolute
+    bottom: -10px
+    right: -10px
+  .shapka-form-title
+    font-size: 26px
+    color: #fff
+    margin-bottom: 25px
+    display: block
+  input
+    width: 452px
+    height: 64px
+    border: 3px solid #fff
+    background: 0 0
+    color: #fff
+    font-size: 19px
+    padding-left: 20px
+    padding-right: 20px
+    margin-right: 28px
+  input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input::placeholder
+    color: #fff
+  button
+    height: 64px
+    width: 313px
+    background-color: #65a343
+    color: #fff
+    font-size: 19px
+    font-family: MyriadProBold
+    border: 0
+    &:hover
+      background-color: #4d7734
+
+.advantages, .services
+  background-color: #fafafa
 
 section
-	padding-top: 90px
-.section-title
-	display: block
-	font-size: 42px
-	font-family: MyriadProSemiBold
-	color: $greyDark
-	text-align: center
-.section-title:after
-	height: 4px
-	width: 196px
-	margin: auto
-	margin-top: 20px
-	content: " "
-	display: block
-	background-image: url("../img/sprite/title-line.png")
-.content-center
-	text-align: center
+  padding-top: 90px
 
-.advantages
-	background-color: #fafafa
-	.advantages-list
-		padding: 100px 0px 100px 0px
-		text-align: center
-		list-style: none
-		.advantages-list-item
-			float: left
-			margin-bottom: 70px
-			img
-				display: inline-block
-				margin-bottom: 20px
-			span
-				display: block
-				font-size: 16px
-				color: $grey
+.section-title
+  display: block
+  font-size: 42px
+  font-family: MyriadProSemiBold
+  color: #353535
+  &:after
+    height: 4px
+    width: 196px
+    margin: 20px auto auto
+    content: " "
+    display: block
+    background-image: url(../img/sprite/title-line.png)
+
+.advantages .advantages-list
+  padding: 100px 0
+  text-align: center
+  list-style: none
+  .advantages-list-item
+    float: left
+    margin-bottom: 70px
+    img
+      display: inline-block
+      margin-bottom: 20px
+    span
+      display: block
+      font-size: 16px
+      color: #474747
 
 @media all and (max-width: 450px)
-	.advantages
-		.advantages-list-item
-			width: 100%
-			padding: 0px !important
+  .advantages .advantages-list-item
+    width: 100%
+    padding: 0 !important
 
 .doverie
-	min-height: 740px
-	.doverie-list
-		list-style: none
-		padding: 60px 0px 60px 0px
-		.bot-top
-			border-top: 2px solid #eaeaea
-			border-bottom: 2px solid #eaeaea
-		.left-right
-			border-left: 2px solid #eaeaea
-			border-right: 2px solid #eaeaea
-		.doverie-list-item-wrapper
-			height: 100%
-			width: 100%
-			overflow: auto
-			justify-content: center
-			align-items: center
-			display: flex			
-			img
-				margin: auto
-		.doverie-list-item
-			margin-bottom: 20px
-			padding: 0px 15px
-			float: left
-			width: 20%
-			height: 150px
+  min-height: 740px
+  .doverie-list
+    list-style: none
+    padding: 60px 0
+    .bot-top
+      border-top: 2px solid #eaeaea
+      border-bottom: 2px solid #eaeaea
+    .left-right
+      border-left: 2px solid #eaeaea
+      border-right: 2px solid #eaeaea
+    .doverie-list-item-wrapper
+      padding: 20px
+      height: 100%
+      width: 100%
+      overflow: auto
+      -webkit-box-pack: center
+      -webkit-justify-content: center
+      -ms-flex-pack: center
+      justify-content: center
+      -webkit-box-align: center
+      -webkit-align-items: center
+      -ms-flex-align: center
+      align-items: center
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      img
+        margin: auto
+    .doverie-list-item
+      margin-bottom: 20px
+      padding: 0 15px
+      float: left
+      width: 20%
+      height: 150px
+    .doverie-list-item-partner
+      width: 25%
 
 @media all and (max-width: 450px)
-	.doverie
-		.doverie-list-item
-			width: 50% !important
+  .doverie .doverie-list-item
+    width: 50% !important
 
-.services
-	background-color: #fafafa
-	.services-body
-		min-height: 590px
-		margin-top: 65px
-		.services-body-select
-			background: url("../img/bg-services-body.png") no-repeat
-			background-size: cover
-			height: auto
-		.services-body-element
-			min-height: 610px
-			background: url("../img/bg-services-body-element.png") no-repeat
-			background-size: cover
-			display: flex
-		    align-items: center
-		    justify-content: center
-		    overflow: auto
-			.services-body-element-body
-				margin: auto 0
-				max-width: 680px
-				padding-left: 50px
-				.services-body-element-title
-					color: #fff
-					font-size: 32px
-					font-family: MyriadProBold
-					display: block
-					margin-bottom: 35px
-				.services-body-element-desctiption
-					color: #fff
-					font-size: 20px
-					display: block
-					margin-bottom: 35px
-				button
-					width: 270px
-					background-color: #65a343
-					border: none
-					color: #fff
-					height: 55px
-					font-size: 18px
-					font-family: MyriadProBold
-		.services-body-select-list
-			list-style: none
-			max-width: 480px
-			float: right
-			padding: 50px 0px 50px 0px
-			margin: 0
-			.services-body-select-list-item
-				color: #fff
-				font-size: 15px
-				border: 3px solid #fff
-				display: inline-block
-				padding: 7px
-				margin-bottom: 10px
-				margin-right: 10px
-			.services-body-select-list-item:hover
-				cursor: pointer
-			.activeService
-				background-color: #65a343
-				border: 3px solid #65a343
+.services .services-body
+  min-height: 590px
+  margin-top: 65px
+  .services-body-select
+    background: url(../img/bg-services-body.jpg) no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    height: auto
+  .services-body-element
+    min-height: 610px
+    background: url(../img/services-backgrounds/1.jpg) no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    display-align-items: center
+    display-justify-content: center
+    display-overflow: auto
+    .services-body-element-body
+      margin: auto 0
+      max-width: 680px
+      padding-left: 50px
+      .services-body-element-title
+        color: #fff
+        font-size: 32px
+        font-family: MyriadProBold
+        display: block
+        margin-bottom: 35px
+      .services-body-element-desctiption
+        color: #fff
+        font-size: 20px
+        display: block
+        margin-bottom: 35px
+      button
+        width: 270px
+        background-color: #65a343
+        border: none
+        color: #fff
+        height: 55px
+        font-size: 18px
+        font-family: MyriadProBold
+        &:hover
+          background-color: #44702a
+  .services-body-select-list
+    list-style: none
+    max-width: 480px
+    float: right
+    padding: 50px 0
+    margin: 0
+    .services-body-select-list-item
+      color: #fff
+      font-size: 15px
+      border: 3px solid #fff
+      display: inline-block
+      padding: 7px
+      margin-bottom: 10px
+      margin-right: 10px
+      &:hover
+        cursor: pointer
+        background-color: rgba(101, 163, 67, 0.6)
+    .activeService
+      background-color: #65a343
+      border: 3px solid #65a343
 
 .noDisplay
-	display: none
+  display: none
 
 @media all and (max-width: 450px)
-	.services
-		.services-body-element
-			.services-body-element-body
-				padding-left: 10px !important
-				button
-					width: 240px !important
+  .services
+    .services-body-select
+      display: none
+    .services-body-element .services-body-element-body
+      padding-left: 10px !important
+      button
+        width: 240px !important
+    .services-body-select-forMobile-title
+      font-size: 30px
+      text-align: center
+      width: 100%
+      display: block
+      margin-bottom: 10px
+    .services-body-select-forMobile
+      width: 100%
+      select
+        width: 90%
+        margin: auto auto 20px
+        display: block
+        border: 2px solid #65a343
+        height: 35px
+        font-size: 17px
+
+@media all and (min-width: 451px)
+  .services .services-body-select-forMobile
+    display: none
 
 .team
-	background: url("../img/bg-team.png") no-repeat
-	background-position: right
-	.team-list
-		list-style: none
-		padding: 100px 0px 100px 0px
-		.team-list-item
-			margin-bottom: 50px
-		.team-list-item-body
-			display: inline-block
-			.team-list-item-body-title
-				color: $greyDark
-				font-size: 34px
-				font-family: MyriadProBold
-				display: block
-				margin-bottom: 10px
-			.team-list-item-body-description
-				font-size: 18px
-				display: block
-				color: #606060
-
-.testimonials
-	background-color: #fafafa
-	.testimonials-body
-		padding: 75px 0px 75px 0px
-		.testimonials-slider
-			margin: auto
-			width: 80%
-			margin-bottom: 60px
-			.testimonials-item-body
-				max-width: 640px
-				display: inline-block
-				text-align: left
-				vertical-align: middle
-			img
-				max-width: 255px
-				display: inline-block
-				margin-right: 37px
-			.title
-				display: block
-				font-size: 36px
-				font-family: MyriadProBold
-				color: $greyDark
-				margin-bottom: 20px
-			.status
-				display: block
-				font-size: 26px
-				color: #65a343
-				margin-bottom: 15px
-			.description
-				display: block
-				font-size: 18px
-				color: #606060
-			.owl-nav
-			    position: absolute
-			    top: 45%
-			    width: 100%
-			    .owl-prev
-			      display: block
-			      content: " "
-			      float: left
-			      background: url("../img/arrow-left-green.png") no-repeat
-			      width: 26px
-			      height: 49px
-			      text-indent: -9999px
-			      margin-left: -7%
-			    .owl-next
-			      display: block
-			      float: right
-			      background: url("../img/arrow-right-green.png") no-repeat
-			      width: 26px
-			      height: 49px
-			      text-indent: -9999px
-			      margin-right: -7%
-
-
-
-.complete-objects
-	.complete-objects-body
-		padding: 100px 0px 100px 0px
-		.complete-objects-slider
-			width: 80%
-			margin: auto
-			.complete-objects-sub-item
-				margin-bottom: 15px
-				.complete-objects-sub-item-description
-					height: 80px
-					background-color: #65a343
-					color: #fff
-					line-height: 18px
-					display: flex
-				    align-items: center
-				    justify-content: center
-				    overflow: auto
-					span
-						color: #fff
-						font-size: 14px
-						line-height: 18px
-						display: block
-						margin: auto
-						padding: 0px 7px
-				// width: 233px
-			.owl-stage-outer
-				// width: 80%
-				// padding-left: 100px
-				// spadding-right: 100px
-			.owl-nav
-			    position: absolute
-			    top: 45%
-			    width: 100%
-			    .owl-prev
-			    	z-index: 9999
-				    display: block
-				    content: " "
-				    float: left
-				    background: url("../img/arrow-left-grey.png") no-repeat
-				    width: 34px
-				    height: 62px
-				    text-indent: -9999px
-				    margin-left: -7%
-			    .owl-next
-			        display: block
-			        float: right
-			        background: url("../img/arrow-right-gray.png") no-repeat
-			        width: 34px
-			        height: 62px
-			        text-indent: -9999px
-			        margin-right: -7%
-
-
-.bigSlider
-	position: relative
-	.section-title
-		position: absolute
-		color: #fff
-		padding-top: 80px
-		z-index: 2
-		width: 100%
-	.bigSlider-slider
-		.owl-nav
-		    position: absolute
-		    top: 45%
-		    width: 100%
-		    .owl-prev
-		    	z-index: 9999
-			    display: block
-			    content: " "
-			    float: left
-			    background: url("../img/arrow-left-green.png") no-repeat
-			    width: 26px
-			    height: 49px
-			    text-indent: -9999px
-			    margin-left: 20px
-		    .owl-next
-		        display: block
-		        float: right
-		        background: url("../img/arrow-right-green.png") no-repeat
-		        width: 26px
-		        height: 49px
-		        text-indent: -9999px
-		        margin-right: 20px
-
-
-.map
-	padding: 0
-	position: relative
-	.YMapsID
-	.map-contacts
-		z-index: 2
-		padding: 40px 70px 40px 70px
-		top: 100px
-		left: 200px
-		position: absolute
-		// min-width: 550px
-		// min-height: 370px
-		background-color: #206a9d
-		.map-contacts-title
-			font-size: 40px
-			color: #fff
-		.map-contacts-list
-			list-style: none
-			padding: 0
-			.map-contacts-item
-				display: block
-				margin-bottom: 15px
-				i
-					margin-top: 4px
-					float: left
-					margin-right: 12px
-				a, span
-					font-size: 24px
-					color: #fff
-					float: left
+  background: url(../img/bg-team.png) right no-repeat
+  .team-list
+    list-style: none
+    padding: 100px 0
+    .team-list-item
+      margin-bottom: 50px
+    .team-list-item-body
+      display: inline-block
+      .team-list-item-body-title
+        color: #353535
+        font-size: 34px
+        font-family: MyriadProBold
+        display: block
+        margin-bottom: 10px
+      .team-list-item-body-description
+        font-size: 18px
+        display: block
+        color: #606060
 
 @media all and (max-width: 800px)
-	.map-contacts
-		position: relative !important
-		top: 0px !important
-		left: 0px !important
+  .team
+    padding-right: 20px !important
+    padding-left: 20px !important
+    img
+      width: 250px
+      margin: 15px auto
+    .team-list-item-body-title
+      font-size: 28px !important
 
+.testimonials
+  background-color: #fafafa
+  .testimonials-body
+    padding: 75px 0
+    .testimonials-slider
+      margin: auto auto 60px
+      width: 80%
+      .testimonials-item-body
+        max-width: 640px
+        display: inline-block
+        text-align: left
+        vertical-align: middle
+      img
+        max-width: 255px
+        display: inline-block
+        margin-right: 37px
+        border: 1px solid #65a343
+      .title
+        display: block
+        font-size: 36px
+        font-family: MyriadProBold
+        color: #353535
+        margin-bottom: 20px
+      .status
+        display: block
+        font-size: 26px
+        color: #65a343
+        margin-bottom: 15px
+      .description
+        display: block
+        font-size: 18px
+        color: #606060
+      .owl-nav
+        position: absolute
+        top: 45%
+        width: 100%
+        .owl-prev
+          display: block
+          content: " "
+          float: left
+          background: url(../img/arrow-left-green.png) no-repeat
+          width: 26px
+          height: 49px
+          text-indent: -9999px
+          margin-left: -7%
+        .owl-next
+          display: block
+          float: right
+          background: url(../img/arrow-right-green.png) no-repeat
+          width: 26px
+          height: 49px
+          text-indent: -9999px
+          margin-right: -7%
+
+@media all and (max-width: 450px)
+  .testimonials .testimonials-slider
+    img
+      width: 200px
+      margin-right: 0 !important
+      margin-bottom: 10px
+    .title
+      font-size: 30px !important
+      text-align: center
+    .description, .status
+      text-align: center
+
+.complete-objects .complete-objects-body
+  padding: 100px 0
+  .complete-objects-slider
+    width: 80%
+    margin: auto
+    .complete-objects-sub-item
+      margin-bottom: 15px
+      img
+        height: 159px
+      .complete-objects-sub-item-description
+        height: 80px
+        background-color: #65a343
+        color: #fff
+        line-height: 18px
+        display: -webkit-box
+        display: -webkit-flex
+        display: -ms-flexbox
+        display: flex
+        display-align-items: center
+        display-justify-content: center
+        display-overflow: auto
+        span
+          color: #fff
+          font-size: 14px
+          line-height: 18px
+          display: block
+          margin: auto
+          padding: 0 7px
+    .owl-nav
+      position: absolute
+      top: 45%
+      width: 100%
+      z-index: -1
+      .owl-prev
+        z-index: 9999
+        display: block
+        content: " "
+        float: left
+        background: url(../img/arrow-left-grey.png) no-repeat
+        width: 34px
+        height: 62px
+        text-indent: -9999px
+        margin-left: -7%
+      .owl-next
+        display: block
+        float: right
+        background: url(../img/arrow-right-gray.png) no-repeat
+        width: 34px
+        height: 62px
+        text-indent: -9999px
+        margin-right: -7%
+
+@media all and (max-width: 480px)
+  .complete-objects .complete-objects-sub-item
+    .complete-objects-sub-item-description, img
+      width: 250px !important
+      margin: auto
+
+.bigSlider
+  position: relative
+  .section-title
+    position: absolute
+    color: #fff
+    padding-top: 80px
+    z-index: 2
+    width: 100%
+  .bigSlider-slider .owl-nav
+    position: absolute
+    top: 45%
+    width: 100%
+    .owl-prev
+      z-index: 9999
+      display: block
+      content: " "
+      float: left
+      background: url(../img/arrow-left-green.png) no-repeat
+      width: 26px
+      height: 49px
+      text-indent: -9999px
+      margin-left: 20px
+    .owl-next
+      display: block
+      float: right
+      background: url(../img/arrow-right-green.png) no-repeat
+      width: 26px
+      height: 49px
+      text-indent: -9999px
+      margin-right: 20px
+
+.map
+  padding: 0
+  position: relative
+  .map-contacts
+    z-index: 2
+    padding: 40px 70px
+    top: 100px
+    left: 200px
+    position: absolute
+    background-color: #206a9d
+    .map-contacts-title
+      font-size: 40px
+      color: #fff
+    .map-contacts-list
+      list-style: none
+      padding: 0
+      .map-contacts-item
+        display: block
+        margin-bottom: 15px
+        i
+          margin-top: 4px
+          float: left
+          margin-right: 12px
+        a, span
+          font-size: 24px
+          color: #fff
+          float: left
+
+@media all and (max-width: 800px)
+  .map-contacts
+    padding-left: 15px !important
+    padding-right: 15px !important
+    position: relative !important
+    top: 0 !important
+    left: 0 !important
+    .map-contacts-title
+      font-size: 36px !important
+    a, span
+      margin-top: 2px
+      font-size: 18px !important
+    i
+      margin-top: 0 !important
+      margin-right: 6px !important
 
 .footer
-	padding: 30px 0px 30px 0px
-	a, span, p
-		font-size: 16px
-		color: $greyDark
-		vertical-align: middle
-	p
-		margin: 0
-	.myContainer
-		// display: flex
-	    // align-items: center
-	    // justify-content: center
-	    // overflow: auto
-	.footer-left
-		text-align: left
-	.footer-center
-		text-align: center
-	.footer-right
-		text-align: right
-		a
-			color: #65a343
-	.footer-left, .footer-center, .footer-right
-		margin: auto 0px
-	.footer-center, .footer-right
-		padding-top: 10px
+  padding: 30px 0
+  a, p, span
+    font-size: 16px
+    color: #353535
+    vertical-align: middle
+  p
+    margin: 0
+  .footer-left
+    text-align: left
+  .footer-center
+    text-align: center
+  .footer-right
+    text-align: right
+    a
+      color: #65a343
+  .footer-center, .footer-left, .footer-right
+    margin: auto 0
+  .footer-center, .footer-right
+    padding-top: 10px
 
 .modal-send
-	.modal-send-title
-		display: block
-		margin-bottom: 25px
-		color: #65a343
-		font-size: 30px
-	input
-		width: 452px
-		height: 44px
-		border: 3px solid #65a343
-		background-color: #fafafa
-		color: #000
-		font-size: 19px
-		padding-left: 20px
-		padding-right: 20px
-		margin-bottom: 30px
-	input::placeholder
-		color: $grey
-	button
-		height: 64px
-		width: 313px
-		background-color: #65a343
-		color: #fff
-		font-size: 19px
-		font-family: MyriadProBold
-		border: 0px
+  .modal-send-title
+    display: block
+    margin-bottom: 25px
+    color: #65a343
+    font-size: 30px
+  input
+    width: 452px
+    height: 44px
+    border: 3px solid #65a343
+    background-color: #fafafa
+    color: #000
+    font-size: 19px
+    padding-left: 20px
+    padding-right: 20px
+    margin-bottom: 30px
+    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::placeholder
+      color: #474747
+  button
+    height: 64px
+    width: 313px
+    background-color: #65a343
+    color: #fff
+    font-size: 19px
+    font-family: MyriadProBold
+    border: 0
 
 .modal-success
-	.modal-success-title
-		display: block
-		color: #65a343
-		font-size: 30px
-	img
-		width: 200px
+  .modal-success-title
+    display: block
+    color: #65a343
+    font-size: 30px
+  img
+    width: 200px
 
 .modal-img
-	padding: 0
-	width: auto
+  padding: 0
+  width: auto
+
+@media all and (max-width: 450px)
+  .footer
+    .footer-center, .footer-left, .footer-right
+      text-align: center
+      margin-bottom: 10px
+
+.modal-politica
+  .title
+    font-size: 27px
+  .text
+    text-align: left
+
+.sprite
+  background-image: url(../img/sprite.png)
+  background-repeat: no-repeat
+  display: block
+
+.sprite-Forma-1-_____
+  width: 13px
+  height: 13px
+  background-position: -5px -5px
+
+.sprite-contacts-geo
+  width: 26px
+  height: 26px
+  background-position: -28px -5px
+
+.sprite-contacts-mail
+  width: 26px
+  height: 26px
+  background-position: -64px -5px
+
+.sprite-contacts-telepnone
+  width: 26px
+  height: 26px
+  background-position: -100px -5px
+
+.sprite-header-mail-icon
+  width: 27px
+  height: 27px
+  background-position: -136px -5px
+
+.sprite-header-telepnone-icon
+  width: 27px
+  height: 27px
+  background-position: -173px -5px
+
+.sprite-slider-nav
+  width: 25px
+  height: 25px
+  background-position: -5px -42px
+
+.sprite-slider-nav-active
+  width: 25px
+  height: 25px
+  background-position: -40px -42px
+
+.sprite-title-line
+  width: 196px
+  height: 4px
+  background-position: -5px -77px
+
+.bigSlider
+  padding-top: 0px
+
+.modal-close
+  cursor: pointer
+  position: absolute
+  top: -25px
+  right: -25px
+  display: block
+  overflow: visible
+  width: 24px
+  height: 24px
+  margin: 0
+  padding: 0
+  cursor: pointer
+  -webkit-transition: color 0.2s
+  transition: color 0.2s
+  border: 0
+  outline: 0
+  background: url('/img/close.png') no-repeat
+
+@media all and (min-width: 450px)
+  .forMobile
+    display: none
+
+@media all and (max-width: 450px)
+  .forDesktop
+    display: none
+
+.shapka
+  input::-webkit-input-placeholder
+    color: #fff !important
