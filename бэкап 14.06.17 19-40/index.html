@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Парадигма. Безопасные электромонтажные работы во Владивостоке</title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="img/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="myContainer clearfix">
+                <div class="col-md-10 header-logo">
+                    <img src="img/logo.png" alt="" class="header-logo-img">
+                    <img src="img/logo-description.png" alt="" class="header-logo-img">
+                </div>
+                <div class="col-md-14 header-contacts">
+                    <ul class="header-contacts-list clearfix">
+                        <li class="header-contacts-list-item">
+                            <i class="sprite sprite-header-telepnone-icon"></i>
+                            <a href="tel:84232015277" class="header-contacts-list-item-text">+7(423) 201-52-77</a>
+                        </li>
+                        <li class="header-contacts-list-item">
+                            <i class="sprite sprite-header-telepnone-icon"></i>
+                            <a href="tel:84232019677" class="header-contacts-list-item-text">+7(423) 201-96-77</a>
+                        </li>
+                        <li class="header-contacts-list-item">
+                            <i class="sprite sprite-header-mail-icon"></i>
+                            <a href="mailto:info@paradigma-profi.ru" class="header-contacts-list-item-text">info@paradigma-profi.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row shapka">
+            <div class="myContainer clearfix">
+                <div><span class="shapka-title">Безопасные электромонтажные работы любой сложности во Владивостоке</span></div>
+                <div><span class="shapka-description">От проектирования до полного ввода в эксплуатацию</span></div>
+                <div class="shapka-form">
+                    <img src="img/shapka-form-top-left.png" class="shapka-form-top-left" alt="">
+                    <img src="img/shapka-form-top-right.png" class="shapka-form-top-right" alt="">
+                    <span class="shapka-form-title">Получите бесплатный расчет стоимости работ</span>
+                    <form id="form1" action="" method="POST">
+                        <input id="inputTelephone" name="telephone" type="text" placeholder="Введите Ваш контактный телефон или E-mail">
+                        <button type="button" onclick="checkPhoneOrEmailAndSend()">Получить расчет</button>
+                    </form>
+                    <img src="img/shapka-form-bot-left.png" class="shapka-form-bot-left" alt="">
+                    <img src="img/shapka-form-bot-right.png" class="shapka-form-bot-right" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="row advantages content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Наши преимущества</div>
+                <ul class="advantages-list clearfix">
+                    <div class="clearfix">
+                        <li class="advantages-list-item col-md-6 col-sm-24">
+                            <img src="img/advantage1.png" alt="">
+                            <span>Проводим бесплатную диагностику вашей электропроводки на соответствие нормам и правилам, предоставим бесплатный расчет по работам и материалам</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage2.png" alt="">
+                            <span>Наши специалисты имеют соответствующие группы допуска по электробезопасности</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage3.png" alt="">
+                            <span>Гарантия на электромонтажные работы 3 года</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage4.png" alt="">
+                            <span>Сертифицированное оборудование и пожаробезопасные материалы</span>
+                        </li>
+                    </div>
+                    <div class="clearfix">
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage5.png" alt="">
+                            <span>Предоставление план-графика выполнения электромонтажных работ и согласование его с другими подрядчиками на объекте</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage6.png" alt="">
+                            <span>Использование мощного инструмента с пылеудалением</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage7.png" alt="">
+                            <span>Чистота и порядок объекта на всем протяжении работ</span>
+                        </li>
+                        <li class="advantages-list-item col-md-6">
+                            <img src="img/advantage8.png" alt="">
+                            <span>Выполнение всех работ своими силами, без привлечения субподрядчиков, дает нам возможность гибкого ценообразования</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="row doverie content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Нам доверяют</div>
+                <ul class="doverie-list clearfix forDesktop">
+                    <div class="clearfix">
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-fresh25.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-radius.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-zel-ostrov.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-detctvo.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-ihal.png" alt=""></div>
+                        </li>
+                    </div>
+                    <div class="clearfix">
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-olimp.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-technodrom.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-toki-slishi.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-u-box.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-drugoi-hleb.png" alt=""></div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="doverie-list clearfix forMobile">
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-fresh25.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-radius.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-zel-ostrov.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-detctvo.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-ihal.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-olimp.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-technodrom.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-toki-slishi.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/doverie-u-box.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/doverie-drugoi-hleb.png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row services">
+            <div class="section-title">Наши услуги</div>
+            <div class="services-body">
+                <div class="services-body-select-forMobile">
+                    <span class="services-body-select-forMobile-title">Выберете услугу:</span>
+                    <select class="services-body-select-forMobile-select" name="" id="">
+                        <option value="1">Электромонтаж в квартире</option>
+                        <option value="2">Электромонтаж в коттедже</option>
+                        <option value="3">Электромонтаж в деревянном доме</option>
+                        <option value="4">Электромонтаж в производственных и складских помещениях</option>
+                        <option value="5">Электромонтаж в торговых центрах и магазинах</option>
+                        <option value="6">Электромонтаж в офисных помещениях</option>
+                        <option value="7">Сборка распределительных щитов, ВРУ</option>
+                        <option value="8">Сборка систем автоматики</option>
+                        <option value="9">Пуско-наладочные работы</option>
+                        <option value="10">Системы антиобледения, теплые полы</option>
+                        <option value="11">Молнезащита и заземление</option>
+                        <option value="12">Монтаж СИП</option>
+                        <option value="13">Монтаж светодиодного освещения</option>
+                        <option value="14">Техническое обслуживание</option>
+                    </select>
+                </div>
+                <div class="services-body-select col-md-11">
+                    <ul class="services-body-select-list">
+                        <li data-service="1" class="services-body-select-list-item activeService">Электромонтаж в квартире</li>
+                        <li data-service="2" class="services-body-select-list-item">Электромонтаж в коттедже</li>
+                        <li data-service="3" class="services-body-select-list-item">Электромонтаж в деревянном доме</li>
+                        <li data-service="4" class="services-body-select-list-item">Электромонтаж в производственных и складских помещениях</li>
+                        <li data-service="5" class="services-body-select-list-item">Электромонтаж в торговых центрах и магазинах</li>
+                        <li data-service="6" class="services-body-select-list-item">Электромонтаж в офисных помещениях</li>
+                        <li data-service="7" class="services-body-select-list-item">Сборка распределительных щитов, ВРУ</li>
+                        <li data-service="8" class="services-body-select-list-item">Сборка систем автоматики</li>
+                        <li data-service="9" class="services-body-select-list-item">Пуско-наладочные работы</li>
+                        <li data-service="10" class="services-body-select-list-item">Системы антиобледенения, теплые полы</li>
+                        <li data-service="11" class="services-body-select-list-item">Молнезащита и заземление</li>
+                        <li data-service="12" class="services-body-select-list-item">Монтаж СИП</li>
+                        <li data-service="13" class="services-body-select-list-item">Монтаж светодиодного освещения</li>
+                        <li data-service="14" class="services-body-select-list-item">Техническое обслуживание</li>
+                    </ul>
+                    <span style="opacity: 0">hello</span>
+                </div>
+                <div class="services-body-element col-md-13">
+                    <div class="services-body-element-body">
+                        <div id="service1" class="">
+                            <span class="services-body-element-title">Электромонтаж в квартире</span>
+                            <span class="services-body-element-desctiption">Наш богатый опыт работы позволит вам снизить затраты на электрику, получить надежную и безопасную систему в кратчайшие сроки.</span>
+                        </div>
+                        <div id="service2" class="noDisplay">
+                            <span class="services-body-element-title">Электромонтаж в коттедже</span>
+                            <span class="services-body-element-desctiption">Наша компания проводит комплекс услуг по электрификации участка и дома, получение технических условий, расчета допустимой нагрузки в коттедже, организацию защитного заземления и молниезащиты.</span>
+                        </div>
+                        <div id="service3" class="noDisplay">
+                            <span class="services-body-element-title">Электромонтаж в деревянном доме</span>
+                            <span class="services-body-element-desctiption">Электрика в деревянном доме выполняется согласно всем требованиям безопасности, мы знаем как защитить деревянный дом от случайной искры и грызунов
+							, какой кабель и средства защиты выбрать.</span>
+                        </div>
+                        <div id="service4" class="noDisplay">
+                            <span class="services-body-element-title">Электромонтаж в производственных и складских помещениях</span>
+                            <span class="services-body-element-desctiption">Расчет необходимой нагрузки, выполнение требований безопасности и ПУЭ, реализация электрификации и мер защитного заземления, монтаж светильников согласно нормам освещенности.</span>
+                        </div>
+                        <div id="service5" class="noDisplay">
+                            <span class="services-body-element-title">Электромонтаж в торговых центрах и магазинах</span>
+                            <span class="services-body-element-desctiption">Выбор правильного света в магазине помогает увеличить уровень продаж товара, делая его более привлекательным в глазах покупателя. Мы делаем ПРАВИЛЬНЫЙ свет вашего магазина.</span>
+                        </div>
+                        <div id="service6" class="noDisplay">
+                            <span class="services-body-element-title">Электромонтаж в офисных помещениях</span>
+                            <span class="services-body-element-desctiption">Электрика в офисе должна соответствовать всем требованиям ПУЭ, ГОСТов и СНиПов. Качественный монтаж должен обеспечивать комфортное и безопасное рабочее место персонала. Наши специалисты знают как сделать стабильную, работающую без сбоев систему.</span>
+                        </div>
+                        <div id="service7" class="noDisplay">
+                            <span class="services-body-element-title">Сборка распределительных щитов, ВРУ</span>
+                            <span class="services-body-element-desctiption">Мы выпускаем готовые распределительные щиты и ВРУ на заказ под любые требования со всей необходимой документацией.</span>
+                        </div>
+                        <div id="service8" class="noDisplay">
+                            <span class="services-body-element-title">Сборка систем автоматики</span>
+                            <span class="services-body-element-desctiption">Наши специалисты готовы разработать и реализовать систему автоматики для бытовых и промышленных нужд.</span>
+                        </div>
+                        <div id="service9" class="noDisplay">
+                            <span class="services-body-element-title">Пуско-наладочные работы</span>
+                            <span class="services-body-element-desctiption">Специалисты нашей компании выполнят пуско-наладку любого электрооборудования, подготовят всю необходимую документацию.</span>
+                        </div>
+                        <div id="service10" class="noDisplay">
+                            <span class="services-body-element-title">Системы антиобледенения, теплые полы</span>
+                            <span class="services-body-element-desctiption">Вопросы отопления помещений и прогрева инженерных устройств - актуальны и очень важны в современных коммуникациях. Мы знаем как на этом сэкономить, создав надежную и безотказную систему.</span>
+                        </div>
+                        <div id="service11" class="noDisplay">
+                            <span class="services-body-element-title">Молнезащита и заземление</span>
+                            <span class="services-body-element-desctiption">Производим полный комплекс электромонтажных работ в квартирах, жилых домах, дачах, на участках, в коттеджах, в новостройках и прочих жилых обьектов!</span>
+                        </div>
+                        <div id="service12" class="noDisplay">
+                            <span class="services-body-element-title">Монтаж СИП</span>
+                            <span class="services-body-element-desctiption">Наша компания выполняет монтаж магистрального кабеля СИП, подключение загородных домов к магистральным трассам, подготовка необходимой документации.</span>
+                        </div>
+                        <div id="service13" class="noDisplay">
+                            <span class="services-body-element-title">Монтаж светодиодного освещения</span>
+                            <span class="services-body-element-desctiption">Установка светодиодных светильников от российского производителя. Расчет всех параметров исходя из площади помещения и расстановки мебели, оборудования. Большая гарантия и увеличенный срок службы.</span>
+                        </div>
+                        <div id="service14" class="noDisplay">
+                            <span class="services-body-element-title">Техническое обслуживание</span>
+                            <span class="services-body-element-desctiption">Проводим полную диагностику электропроводки, гарантийное и пост гарантийное обслуживание систем электроснабжения.</span>
+                        </div>
+                        <button data-remodal-target="modal-send">Получить консультацию</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row bigSlider">
+            <div class="testimonials-body">
+                <div class="section-title">Акции</div>
+                <div class="owl-carousel bigSlider-slider">
+                    <div>
+                        <img src="img/slider-img1-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/slider-img1-min.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row doverie content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Наши партнеры</div>
+                <ul class="doverie-list clearfix forDesktop">
+                    <div class="clearfix">
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/1.jpg" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/2.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/3.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/4.png" alt=""></div>
+                        </li>
+                    </div>
+                    <div class="clearfix">
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/5.jpg" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/6.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/7.png" alt=""></div>
+                        </li>
+                        <li class="doverie-list-item doverie-list-item-partner">
+                            <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/8.png" alt=""></div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="doverie-list clearfix forMobile">
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/1.jpg" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/2.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/3.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/4.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/5.jpg" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/6.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper bot-top"><img class="img-responsive" src="img/partners/7.png" alt=""></div>
+                    </li>
+                    <li class="doverie-list-item doverie-list-item-partner">
+                        <div class="doverie-list-item-wrapper left-right"><img class="img-responsive" src="img/partners/8.png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row team content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Команда профессионалов</div>
+                <ul class="team-list clearfix">
+                    <li class="team-list-item">
+                        <img src="img/team1.jpg" alt="" style="margin-right: 30px">
+                        <div class="team-list-item-body" style="text-align: left">
+                            <span class="team-list-item-body-title">Лихолат Сергей Андреевич</span>
+                            <span class="team-list-item-body-description">Руководитель - системы безопасности и видеонаблюдения</span>
+                        </div>
+                    </li>
+                    <li class="team-list-item">
+                        <div class="team-list-item-body" style="text-align: right">
+                            <span class="team-list-item-body-title">Шедловский Андрей Владимирович</span>
+                            <span class="team-list-item-body-description">Руководитель - электротехническое направление</span>
+                        </div>
+                        <img src="img/team2.jpg" alt="" style="margin-left: 30px">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row testimonials content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Отзывы</div>
+                <div class="testimonials-body">
+                    <div class="owl-carousel testimonials-slider">
+                        <div class="clearfix">
+                            <img src="img/testimonials/1.jpg" alt="" class="img-responsive">
+                            <div class="testimonials-item-body">
+                                <span class="title">Бордюженко Н.В.</span>
+                                <span class="status">Генеральный директор ООО "Ю-БОКС"</span>
+                                <span class="description">ООО "Ю-БОКС" выражает благодарность компании ООО "ЦУТМК "Парадигма-Профи" за высокий профессионализм в выполнении монтажных работ на складе индивидуального хранения по адресу г. Владивосток, ул. Западная 29.</span>
+                            </div>
+                        </div>
+                        <!-- <div class="clearfix">
+	    					<img src="img/testimonials-img.png" alt="" class="img-responsive">
+	    					<div class="testimonials-item-body">
+	    						<span class="title">Лихолат Сергей Андреевич</span>
+	    						<span class="status">Директор</span>
+	    						<span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto minima accusamus dolore repudiandae architecto doloribus ipsa, sapiente ipsum ex praesentium quam ad, harum commodi atque assumenda deserunt officiis libero. Sed.</span>
+	    					</div>
+	    				</div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row complete-objects content-center">
+            <div class="myContainer clearfix">
+                <div class="section-title">Выполненные объекты</div>
+                <div class="complete-objects-body">
+                    <div class="owl-carousel complete-objects-slider">
+                        <div class="complete-objects-item">
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-1.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-1.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Электромонтажные работы в производственном помещении компании Дальпико</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-5.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-5.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж освещения в холле ТЦ по ул. Алеутской</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-9.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-9.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж акцентного освещения в магазине Фрэш 25 в г. Арсеньев</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="complete-objects-item">
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-2.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-2.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Электромонтажные работы в магазине Счастливое детство в ТЦ Седанка-Сити</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-6.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-6.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж освещения в магазине Зелёный остров ТЦ Айсберг г. Большой Камень</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-10.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-10.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Замена освещения в магазине Фрэш 25 в г. Находка</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="complete-objects-item">
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-3.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-3.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Электромонтажные работы в магазине Олимп в г. Уссурийск</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-7.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-7.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж освещения в магазине Зелёный остров в ТЦ Находка Мега в г. Находка (Помещение 6000 кв.м.)</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-11.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-11.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Замена освещения в магазине Фрэш 25 в г. Дальнегорск</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="complete-objects-item">
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-4.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-4.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Электромонтажные работы в магазине №3 Счастливое детство г.Хабаровск</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-8.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-8.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж освещения в Интернет-магазине игрушек Wey Best</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-12.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-12.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Замена освещения в магазине Радиус в г. Большой Камень</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="complete-objects-item">
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-2.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-2.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Электромонтажные работы в магазине Счастливое детство в ТЦ Седанка-Сити</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-6.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-6.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Монтаж освещения в магазине Зелёный остров ТЦ Айсберг г. Большой Камень</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="complete-objects-sub-item">
+                                <a href="img/complete-object-big/complete-object-10.jpg">
+                                    <img class="complect-object-img img-responsive" src="img/complete-object-10.jpg" alt="">
+                                    <div class="complete-objects-sub-item-description">
+                                        <span>Замена освещения в магазине Фрэш 25 в г. Находка</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row map">
+            <div class="map-contacts">
+                <span class="map-contacts-title">Контакты</span>
+                <ul class="map-contacts-list">
+                    <li class="map-contacts-item clearfix">
+                        <i class="sprite sprite-contacts-telepnone"></i>
+                        <a href="#">+7(423)-201-96-77</a>
+                    </li>
+                    <li class="map-contacts-item clearfix">
+                        <i class="sprite sprite-contacts-telepnone"></i>
+                        <a href="#">+7(423)-201-52-77</a>
+                    </li>
+                    <li class="map-contacts-item clearfix">
+                        <i class="sprite sprite-contacts-mail"></i>
+                        <a href="#">info@paradigma-profi.ru</a>
+                    </li>
+                    <li class="map-contacts-item clearfix">
+                        <i class="sprite sprite-contacts-geo"></i>
+                        <span>г. Владивосток, ул. Фадеева 30, офис 12</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="YMapsID" id="YMapsID" style="height:600px"></div>
+        </section>
+        <section class="row footer">
+            <div class="myContainer clearfix">
+                <div class="col-md-8 col-xs-24 footer-left">
+                    <p>© ООО Парадигма-профи.</p>
+                    <p>Все права защищены</p>
+                </div>
+                <div class="col-md-8 col-xs-24 footer-center">
+                    <a data-remodal-target="modal-politica">Политика конфеденциальности</a>
+                </div>
+                <div class="col-md-8 col-sm-24 footer-right">
+                    <span>Разработка сайта: </span><a target="_blank" href="http://dizlab.com/">Dizlab.com</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="remodal modal-send" data-remodal-id="modal-send" data-remodal-options="hashTracking: false">
+        <div data-remodal-action="close" class="modal-close"></div>
+        <span class="modal-send-title">Введите ваш телефон или e-mail, и мы с Вами свяжемся</span>
+        <form id="form2" action="" method="POST">
+            <input id="inputTelephone2" name="telephone2" type="text" placeholder="Введите Ваш контактный телефон или E-mail">
+            <button type="button" onclick="checkPhoneOrEmailAndSend2()">Получить консультацию</button>
+        </form>
+    </div>
+    <div class="remodal modal-success" data-remodal-id="modal-success" data-remodal-options="hashTracking: false">
+        <div data-remodal-action="close" class="modal-close"></div>
+        <span class="modal-success-title">Спасибо, Ваши контактные данные отправлены. Скоро мы свяжемся с Вами.</span>
+        <img src="img/success.png" alt="">
+    </div>
+    <div class="remodal modal-img" data-remodal-id="modal-img" data-remodal-options="hashTracking: false">
+        <button data-remodal-action="close" class="modal-close"></button>
+    </div>
+    <div class="remodal modal-politica" data-remodal-id="modal-politica" data-remodal-options="hashTracking: false">
+        <div data-remodal-action="close" class="modal-close"></div>
+        <span class="title">Политика конфиденциальности</span>
+        <div class="text">
+            <p>(далее по тексту – Политика)</p>
+            <p>Настоящая Политика составлена в соответствии с действующим законодательством РФ, в том числе в соответствии с Федеральным законом от 27 июля 2006 года № 152- ФЗ «О персональных данных», и призвана надлежащим образом урегулировать отношения, возникающие между физическим или юридическим лицом-пользователем Сайта paradigma-profi.ru(далее по тексту – Сайт) и администрацией сайта paradigma-profi.ru (далее по тексту – Администрация). </p>
+            <p>Все термины и определения, которые встречаются в тексте настоящей Политики, должны трактоваться в соответствии с договором-оферты, с текста которого пользователь перенаправлен на интернет-страницу с настоящей Политикой, а в случае отсутствия определения в тексте Политики - в соответствии с Законом «О персональных данных», иными действующими нормативными актами РФ и деловым оборотом.</p>
+            <p>Принимая настоящую Политику, пользователь выражает свое безоговорочное согласие на предоставление Администрации: </p>
+            <p>3.1. персональной информации (включая ее обработку): </p>
+            <p>3.1.1. Фамилия, имя, отчество (указываются при создании личного профиля пользователя)
+                <br> 3.1.2. Электронная почта (недоступна для всеобщего пользования)</p>
+            <p>3.2. предоставление автоматической информации, такой как: </p>
+            <p>3.2.1. IP-адрес
+                <br> 3.2.2. Текстовые фрагменты данных о пользователе (cookie)
+                <br> 3.2.3. Браузер или иной программы, с помощью которой пользователь получает доступ к Сайту
+                <br> 3.2.4. данные в URL
+                <br> 3.2.5. HTTP-аутентификация </p>
+            <p>Предоставление иной информации, которая необходима Администрации для организации доступа пользователя к Сайту.</p>
+            <p>Любая информация, которая предоставляется пользователем для целей использования Сайта, должна быть актуальной и достоверной. Администрация исполняет свои обязательства в соответствии с той информацией, которая им известна, и не будет нести ответственность, если ненадлежащее исполнение было вызвано несвоевременным уведомлением пользователя об ее изменении.</p>
+            <p>Администрация не распространяет информацию о пользователе третьим лицам, кроме случаев, когда от пользователя получено соответствующее согласие на такие действия, или предоставление информации разрешено действующим законодательством РФ, и при этом согласие пользователя на ее предоставление не требуется в соответствии с применимым законом. </p>
+            <p>Администрация оставляет за собой право проверять данные, предоставленные пользователем, однако, в случае если персональная и иная информация, предоставленная пользователем, является недостоверной, пользователь самостоятельно несет все связанные с этим неблагоприятные последствия. </p>
+            <p>Администрация не будет нести ответственность за информацию, которая предоставлена пользователем по его желанию. </p>
+            <p>Администрация принимает все меры для защиты персональной информации пользователя от неправомерного или случайного доступа, уничтожения, копирования, распространения. </p>
+            <p>Администрация вправе в одностороннем порядке в любой момент изменить текст настоящей Политики, предварительно уведомив об этом пользователя. Принимая текст настоящей Политики, пользователь дает свое согласие на все последующие к ней изменения. </p>
+            <p>Настоящая Политика не распространяется на сервисы, сайты и так далее третьих лиц, не имеющих юридического и фактического отношения к Администрации. Пользователь самостоятельно урегулирует вопросы предоставления информации о себе с такими лицами. </p>
+            <p>Персональная информация хранится в течение срока действия договора пользователя с Администрацией.</p>
+        </div>
+    </div>
+    <!-- Заранее прогружаю картинки сервисов, чтобы они подолгу не открывались -->
+    <img src="/img/services-backgrounds/14.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/13.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/12.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/11.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/10.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/9.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/8.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/7.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/6.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/5.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/4.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/3.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/2.jpg" style="display: none"></img>
+    <img src="/img/services-backgrounds/1.jpg" style="display: none"></img>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

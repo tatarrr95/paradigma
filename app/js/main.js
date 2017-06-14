@@ -116,7 +116,7 @@ $(document).ready(function() {
     //     mod.open();
     // })
     $(".complete-objects-slider").magnificPopup({
-        delegate: 'a', // the selector for gallery item
+        delegate: '.gallery-item', // the selector for gallery item
         type: 'image',
         navigateByImgClick: true,
         gallery: {
